@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/TheNextBigThing/static/js/main.fa9e1937.js",
+    "index.html": "/TheNextBigThing/index.html",
+    "main.fa9e1937.js.map": "/TheNextBigThing/static/js/main.fa9e1937.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.fa9e1937.js"
+  ]
+}
