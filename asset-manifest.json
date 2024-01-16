@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/TheNextBigThing/static/js/main.fa9e1937.js",
+    "main.css": "/TheNextBigThing/static/css/main.542dadd4.css",
+    "main.js": "/TheNextBigThing/static/js/main.64120138.js",
     "index.html": "/TheNextBigThing/index.html",
-    "main.fa9e1937.js.map": "/TheNextBigThing/static/js/main.fa9e1937.js.map"
+    "main.542dadd4.css.map": "/TheNextBigThing/static/css/main.542dadd4.css.map",
+    "main.64120138.js.map": "/TheNextBigThing/static/js/main.64120138.js.map"
   },
   "entrypoints": [
-    "static/js/main.fa9e1937.js"
+    "static/css/main.542dadd4.css",
+    "static/js/main.64120138.js"
   ]
 }
