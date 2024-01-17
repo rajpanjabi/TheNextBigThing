@@ -1,11 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+
 import App from "./App";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.css'
 
 
-document.body.style = 'background: black;';
+// document.body.style = 'background: white;';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
