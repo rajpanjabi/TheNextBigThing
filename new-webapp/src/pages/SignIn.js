@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Link} from "react-router-dom";
+
 import "./SignIn.css"
 
 
@@ -20,7 +20,7 @@ function SignIn(){
 
    <h1 className="signintext">Sign In</h1>
 
-<form action="/SignUp.js">
+<form className="op" action="/SignUp.js">
    <div className="inputs">
    <input className="backGrey" type="text" placeholder="Email or phone number"></input>
    <input className="backGrey" type="text" placeholder="Password"></input>
