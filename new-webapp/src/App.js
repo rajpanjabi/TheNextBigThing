@@ -1,3 +1,7 @@
+import './Header.css'; // Import a CSS file for styling (create this file if not already present)
+import './Signup.css'; 
+import Header from './Header';
+import Signup from './Signup';
 import React from "react"
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -20,20 +24,18 @@ return (
 
     </Routes>
    </Router>
+   <div className="app-container">
+      <div className="background-container">
+        <Header />
+        <Signup/>
+      </div>
+    </div>
 </>
 
 )
-
-
-
-
-
 }
 
 export default App;
-
-
-
 
 
 
