@@ -1,28 +1,42 @@
+import './Header.css'; // Import a CSS file for styling (create this file if not already present)
+import './Signup.css'; 
+import Header from './Header';
+import Signup from './Signup';
 import React from "react"
-import ReactDOM from "react-dom"
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-let Users=["User1", "Guest", "Kids"];
+import Home from "./pages/Home"
+import SignIn from "./pages/SignIn"
+import Browse from "./pages/Browse"
 
 function App(){
-return (<div style={{height:"1000px", margin:"0px", padding:"0px",border:"0px"}} className="divfirst">
 
-<div> 
+    
+return (
+    <> 
+   
+    
+   <Router>
+    <Routes>
+        <Route path="/NetflixClone" exact element={<Home/>}/>
+        <Route path="/SignIn" exact element={<SignIn/>}/>
+        <Route path="/browse" exact element={<Browse/>}   /> 
 
-<h1 style={{"color":"red"}}>Netflix</h1>
-<p style={{"color":"white"}}> Users</p>
+    </Routes>
+   </Router>
+   <div className="app-container">
+      <div className="background-container">
+        <Header />
+        <Signup/>
+      </div>
+    </div>
+</>
 
-{Users.map((user)=> (<p style={{"color":"white",marginLeft:"700px"}}> {user} </p>)
-
-)}
-
-</div>
-
-
-
-</div>)
-
-
-
+)
 }
 
 export default App;
+
+
+
+
