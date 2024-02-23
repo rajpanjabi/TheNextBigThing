@@ -1,7 +1,17 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
+import './Header.css'; // Import a CSS file for styling (create this file if not already present)
+import './Signup.css'; 
+import Header from "./Header"
 function Signup(){
 return (
     <>
+    
+    <div className="app-container">
+    <div className="background-container">
+      <Header />
+      
+   
+   
     <div className = "text" style={{marginTop:'8%'}}>
         <h1 style={{'textAlign':'center','marginBottom':'25px',fontWeight:'1000','font-size': 'xxx-large'}}>Unlimited movies,TV shows, and more</h1>
         <p style={{'textAlign':'center','marginBottom':'25px'}}>Watch anywhere. Cancel anytime.</p>
@@ -17,6 +27,8 @@ return (
             </div>
         </div>
     </div>
+    </div>
+  </div> 
     </>
 );
 }
