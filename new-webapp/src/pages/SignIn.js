@@ -1,14 +1,52 @@
-import React from "react";
+
+
+import React, { useState } from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
+
 import "./SignIn.css"
+import {useNavigate} from "react-router-dom";
 
 
 function SignIn(){
+
+    let navigate = useNavigate();
+
+
+    const [name,setName]= useState("");
+    const [password, setPassword]= useState("");
+
+
+    function nameChange(event){
+        setName(event.target.value)
+      
+
+
+    }
+    function passChange(event){
+        setPassword(event.target.value)
+        
+
+    }
+
+    function handleSignIn(e){
+        e.preventDefault();
+        console.log(e.target.name);
+        console.log(e.target.password);
+
+       
+       
+        console.log("I'm here")
+        console.log(name);
+        console.log(password);
+        navigate('/browse');
+
+
+    }
     
     return(
         
 
-        // <h1 className="redfont"> Netflix</h1>
+      
     
     <div className="base" >
 
@@ -19,11 +57,11 @@ function SignIn(){
 
    <h1 className="signintext">Sign In</h1>
 
-<form action="/SignUp.js">
+<form className="op" onSubmit={handleSignIn}>
    <div className="inputs">
-   <input className="backGrey" type="text" placeholder="Email or phone number"></input>
-   <input className="backGrey" type="text" placeholder="Password"></input>
-   <input type="submit" className="redcol" value="Sign In"></input>
+   <input className="backGrey" onChange={nameChange} type="text" placeholder="Email or phone number" value={name} ></input>
+   <input  className="backGrey" onChange={passChange} type="text" placeholder="Password" value={password}  ></input>
+   <input type="submit"  className="redcol" value="Sign In"></input>
    </div>
 
   <div className="entLine"> 
@@ -34,7 +72,12 @@ function SignIn(){
    <p className="help">Need help?</p>
    </div>
 
+   <div className="NewNetf"> 
+
    <p> New to Netflix? Sign Up now!</p>
+   <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
+</div>
+
 </form>
 
 

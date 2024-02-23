@@ -1,15 +1,35 @@
 import React from "react";
-
+import "./Home.css"
+import { useNavigate } from "react-router-dom";
 
 function Home(){
+    let navigate=useNavigate();
 
-return(<div style={{height:"1000px", margin:"0px", padding:"0px",border:"0px"}} className="divfirst">
+
+    function HandleSignIn(){
+        navigate("/SignIn")
+
+    }
+
+    function HandleSignUp(){
+        navigate("/SignUp")
+
+    }
+
+return(<div  className="kk">
  <div> 
 
-<h1 style={{"color":"red"}}>Netflix</h1>
- <p style={{"color":"white"}}> Users</p>
+<div className="Net"> 
+<h1 >Netflix</h1>
+</div>
 
- {/* {Users.map((user)=> (<p style={{"color":"white",marginLeft:"700px"}}> {user} </p>) */} 
+<form className="formD" > 
+<input type="submit" onClick={HandleSignIn} className="opt" value="Sign In"></input>
+<input type="submit" onClick={HandleSignUp}  className="opt" value="Sign Up"></input>
+
+</form>
+
+ 
 
  </div>
 

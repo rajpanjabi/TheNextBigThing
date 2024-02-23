@@ -2,28 +2,42 @@
 .base{
    
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/594f8025-139a-4a35-b58d-4ecf8fdc507c/6fa56356-45b4-4c99-8fa0-e2d76468e004/CA-en-20240108-popsignuptwoweeks-perspective_alpha_website_small.jpg");
-    height:50rem; 
-   margin: 0px;
+    /* height:50rem;  */
+    /* background-color: transparent; */
+    margin: 0px;
    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+   height:100vh;
    
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    opacity: 0.9;
+
 }
 
 .redfont{
     color:red;
     margin-left: 4%;
+   
 }
 
 .SignInContainer{
-    margin-top: 15%; 
-    background-color: black;
-    color:white;
+    /* margin-top: 15%;  */
+    background-color: rgb(0,0,0,0.9);
+    color:#f3f3f3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 40%;
-    margin-right: 40%;
+   
+    min-height:660px;
+    width:440px;
+    min-width:380px;
+   
+    
     
    
     
@@ -33,20 +47,32 @@
 .inputs{
     display:flex;
     flex-direction:column;
-    row-gap: 5px;
+    row-gap: 1rem;
+    opacity: 1;
+   
 }
 .image{
     height: 50%;
 }
 .redcol{
-    margin-top: 5px;
+    margin-top: 6.5%;
     background-color: red;
+    height: 50px;;
+    border-radius: 4px;
+    border:0;
+    margin-left: 14%;
+    margin-right: 14%;
+    font-size: 16px;
+
+}
+.op{
+    opacity: 1;
 }
 
-/* .help{
-margin-left: 1rem;
+.help{
+margin-left:43%;
 
-} */
+}
 
 .entLine{
 
@@ -54,6 +80,9 @@ margin-left: 1rem;
     flex-direction: row;
     gap:0.1rem;
     font-size: 13px;;
+    margin-left: 14%;
+    margin-right: 14%;
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 
 .net{
@@ -61,6 +90,31 @@ margin-left: 1rem;
 }
 
 .backGrey{
-    background-color: #f3f3f3;
-    font-size: 13px;;
+    background-color:darkgrey;
+    /* font-size: 13px;; */
+    height:40px;
+    opacity: 1;
+    border-radius: 4px;
+    border:0;
+    margin-left: 14%;
+    margin-right: 14%;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 20px 0;
+    font-size: 16px;
+}
+
+/* // #f3f3f3; */
+
+.NewNetf{
+    margin-left: 14%;
+    margin-right: 14%;
+    font-size: 13px;
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; ;
+    
+}
+
+.signintext{
+    margin-right:48%;
+    font-weight: 500;
 }
