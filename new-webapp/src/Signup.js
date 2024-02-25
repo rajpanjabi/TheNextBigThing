@@ -5,13 +5,9 @@ import Header from "./Header"
 function Signup(){
 return (
     <>
-    
     <div className="app-container">
     <div className="background-container">
-      <Header />
-      
-   
-   
+    <Header />
     <div className = "text" style={{marginTop:'8%'}}>
         <h1 style={{'textAlign':'center','marginBottom':'25px',fontWeight:'1000','font-size': 'xxx-large'}}>Unlimited movies,TV shows, and more</h1>
         <p style={{'textAlign':'center','marginBottom':'25px'}}>Watch anywhere. Cancel anytime.</p>
