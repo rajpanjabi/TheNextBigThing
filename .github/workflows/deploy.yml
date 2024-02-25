@@ -32,11 +32,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 14
-
-    - name: Set Git User Information
-      run: |
-          git config --global user.email kwshr96626@gmail.com
-          git config --global user.name Kawshar Patel
       
     - name: Install Dependencies
       run: npm install
