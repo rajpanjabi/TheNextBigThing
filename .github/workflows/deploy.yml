@@ -15,6 +15,9 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
+
+    - name: Set CI Environment Variable
+      run: echo "CI=false" >> $GITHUB_ENV
       
     - name: Setup Node.js
       uses: actions/setup-node@v3
