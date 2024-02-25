@@ -15,15 +15,15 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
-    - name: List Repository Contents
-      run: ls -R
       
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 14
-
+        
+    - name: List Repository Contents
+      run: ls -R
+      
     - name: Install Dependencies
       run: npm install
       working-directory: ./new-webapp
