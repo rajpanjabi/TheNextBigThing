@@ -23,9 +23,12 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
+      working-directory: ./new-webapp
 
     - name: build application
       run: npm run build
+      working-directory: ./new-webapp
       
     - name: Run Deploy Script
       run: npm run deploy
+      working-directory: ./new-webapp
