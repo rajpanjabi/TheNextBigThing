@@ -5,34 +5,16 @@ import SignIn from "./pages/SignIn"
 import Browse from "./pages/Browse"
 
 function App(){
-
-    
 return (
     <> 
-   
-    
    <Router>
     <Routes>
         <Route path="/SignIn" exact element={<SignIn/>}/>
         <Route path="/browse" exact element={<Browse/>}   /> 
         <Route path="/NetflixClone" exact element={<Signup/>}/>
-
     </Routes>
    </Router>
-   
 </>
-
 )
 }
-
 export default App;
-
-
-
-
-{/* <div className="app-container">
-      <div className="background-container">
-        <Header />
-        <Signup/>
-      </div>
-    </div> */}
