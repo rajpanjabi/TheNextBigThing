@@ -16,6 +16,15 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: Check for Changes in new-webapp folder
+      run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^new-webapp/' &> /dev/null; then
+            echo "Changes detected in the new-webapp folder. Proceeding with deployment."
+          else
+            echo "No changes in the new-webapp folder. Skipping deployment."
+            exit 78
+          fi
+
     - name: Set CI Environment Variable
       run: echo "CI=false" >> $GITHUB_ENV
       
