@@ -10,7 +10,7 @@ return (
     <Header />
     <div className = "text" style={{marginTop:'8%'}}>
         <h1 style={{'textAlign':'center','marginBottom':'25px',fontWeight:'1000','font-size': 'xxx-large'}}>Unlimited movies,TV shows, and more</h1>
-        <p style={{'textAlign':'center','marginBottom':'25px'}}>Watch anywhere. Cancel anytime.</p>
+        <p className="pT" style={{'textAlign':'center','marginBottom':'25px'}}>Watch anywhere. Cancel anytime.</p>
         <h3 style={{'textAlign':'center','marginBottom':'15px',fontWeight:'400',fontSize:'large'}}>Ready to watch? Enter your email to create or restart your membership.</h3>
         <div style={{'display':'inline-flex','margin-left': '33%','width':'-webkit-fill-available'}}>
             <div style={{'margin-right': '1%',width: '35%'}}>
