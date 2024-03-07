@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SignIn.css"
 import {useNavigate} from "react-router-dom";
-import Header from '../Header';
+import logo from '../LogoIcons&Images/Logos-Readability-Netflix-logo.png';
 
 
 function SignIn(){
@@ -25,8 +25,10 @@ function SignIn(){
     }
     
     return(
-    <div className="base">
-     <Header showButtons={false}/>
+    <div className="base ">
+    <div className="imgL" >
+    <img className="logo" src={logo}></img>
+     </div>
      <div className="SignInContainer">
      <h1 className="signintext">Sign In</h1>
      <form className="op" onSubmit={handleSignIn}>

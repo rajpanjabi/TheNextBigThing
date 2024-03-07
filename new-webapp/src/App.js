@@ -12,6 +12,7 @@ return (
         <Route path="/SignIn" exact element={<SignIn/>}/>
         <Route path="/browse" exact element={<Browse/>}   /> 
         <Route path="/NetflixClone" exact element={<Signup/>}/>
+        <Route path="/Raj" exact element={<Signup/>}/>
     </Routes>
    </Router>
 </>
