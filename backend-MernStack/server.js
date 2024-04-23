@@ -12,10 +12,10 @@ app.use(bodyParser.urlencoded({"extended":"true"}));
 
 app.use(cors());
 app.use(express.json());
-// app.use("/auth", auth);
+
 
 mongoose
-  .connect("mongodb://localhost:27017/netflix", {
+  .connect("mongodb+srv://admin:admin@cluster0.4jvsgwg.mongodb.net/Netflix?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -35,6 +35,35 @@ app.get("/hell",(req,res)=>{
     
     
 })
+
+
+
+ 
+const newMovie = new Movie({
+  title: "Movie 1",
+  description: "Description of Movie 1",
+  image: "image1.jpg",
+  imageTitle: "Image Title 1",
+  imageSmall: "small_image1.jpg",
+  trailer: "trailer_url1",
+  video: "video_url1",
+  year: "2022",
+  limit: 18,
+  genre: "Action",
+  duration: "2 hours",
+  isSeries: false
+});
+
+newMovie.save()
+  .then(Movie => {
+    console.log("Movie added successfully:", Movie);
+  })
+  .catch(err => {
+    console.error("Error adding movie:", err);
+  });
+
+  
+
 
 app.get("/db", async (req, res) => {
     try {

@@ -4,6 +4,7 @@ import {useNavigate} from "react-router-dom";
 import logo from '../LogoIcons&Images/Logos-Readability-Netflix-logo.png';
 
 
+
 function SignIn(){
     let navigate = useNavigate();
     const [name,setName]= useState("");
@@ -43,7 +44,7 @@ function SignIn(){
      <p className="help">Need help?</p>
      </div>
      <div className="NewNetf"> 
-     <p> New to Netflix? Sign Up now!</p>
+     <p> New to Netflix? <a style={{"textDecoration":"none", "textDecorationColor":"none"}} href="/NetflixClone">Sign Up now! </a></p>
      <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
      </div>
     </form>
