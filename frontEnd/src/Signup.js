@@ -15,11 +15,11 @@ return (
         <div style={{'display':'inline-flex','margin-left': '33%','width':'-webkit-fill-available'}}>
             <div style={{'margin-right': '1%',width: '35%'}}>
                 <form>
-                <input className="emailForm" type="text" placeholder="Email address" style={{'padding':'0.75rem 1.5rem','background':'linear-gradient(500deg, black, transparent)','background-clip':'padding-box',width:'100%', border: 'solid white', borderWidth: 'thin',borderRadius:'3px'}}></input>
+                <input className="emailForm" type="text" placeholder="Email address" style={{'color':'white','padding':'0.75rem 1.5rem','background':'linear-gradient(500deg, black, transparent)','background-clip':'padding-box',width:'100%', border: 'solid white', borderWidth: 'thin',borderRadius:'3px'}}></input>
                </form>
             </div>
             <div>
-            <button type="button" className="btn btn-primary" style={{'padding':'0.75rem 1.5rem','background':'rgb(229, 9, 20)','border': 'thick','font-size': '17px','font-weight': '500',borderRadius:'3px'}}>Get started</button>
+            <button type="button" className="btn btn-primary" style={{  'padding':'0.75rem 1.5rem','background':'rgb(229, 9, 20)','border': 'thick','font-size': '17px','font-weight': '500',borderRadius:'3px'}}>Get started</button>
             </div>
         </div>
     </div>
