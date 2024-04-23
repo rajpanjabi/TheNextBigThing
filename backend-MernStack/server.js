@@ -39,28 +39,28 @@ app.get("/hell",(req,res)=>{
 
 
  
-const newMovie = new Movie({
-  title: "Movie 1",
-  description: "Description of Movie 1",
-  image: "image1.jpg",
-  imageTitle: "Image Title 1",
-  imageSmall: "small_image1.jpg",
-  trailer: "trailer_url1",
-  video: "video_url1",
-  year: "2022",
-  limit: 18,
-  genre: "Action",
-  duration: "2 hours",
-  isSeries: false
-});
+// const newMovie = new Movie({
+//   title: "Movie 1",
+//   description: "Description of Movie 1",
+//   image: "image1.jpg",
+//   imageTitle: "Image Title 1",
+//   imageSmall: "small_image1.jpg",
+//   trailer: "trailer_url1",
+//   video: "video_url1",
+//   year: "2022",
+//   limit: 18,
+//   genre: "Action",
+//   duration: "2 hours",
+//   isSeries: false
+// });
 
-newMovie.save()
-  .then(Movie => {
-    console.log("Movie added successfully:", Movie);
-  })
-  .catch(err => {
-    console.error("Error adding movie:", err);
-  });
+// newMovie.save()
+//   .then(Movie => {
+//     console.log("Movie added successfully:", Movie);
+//   })
+//   .catch(err => {
+//     console.error("Error adding movie:", err);
+//   });
 
   
 
