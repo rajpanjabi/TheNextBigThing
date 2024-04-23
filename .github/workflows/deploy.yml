@@ -16,12 +16,12 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Check for Changes in new-webapp folder
+    - name: Check for Changes in frontEnd folder
       run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^new-webapp/' &> /dev/null; then
-            echo "Changes detected in the new-webapp folder. Proceeding with deployment."
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^frontEnd/' &> /dev/null; then
+            echo "Changes detected in the frontEnd folder. Proceeding with deployment."
           else
-            echo "No changes in the new-webapp folder. Skipping deployment."
+            echo "No changes in the frontEnd folder. Skipping deployment."
             exit 78
           fi
 
@@ -35,12 +35,12 @@ jobs:
       
     - name: Install Dependencies
       run: npm install
-      working-directory: ./new-webapp
+      working-directory: ./frontEnd
 
     - name: build application
       run: npm run build
-      working-directory: ./new-webapp
+      working-directory: ./frontEnd
       
     - name: Run Deploy Script
       run: npm run deploy
-      working-directory: ./new-webapp
+      working-directory: ./frontEnd
