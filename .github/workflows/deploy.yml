@@ -22,7 +22,6 @@ jobs:
             echo "Changes detected in the frontEnd folder. Proceeding with deployment."
           else
             echo "No changes in the frontEnd folder. Skipping deployment."
-            exit 78
           fi
 
     - name: Set CI Environment Variable
