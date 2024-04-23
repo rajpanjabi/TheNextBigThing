@@ -1,6 +1,3 @@
-
-
-
 import mongoose from "mongoose"
 
 const ListSchema= new mongoose.Schema({
