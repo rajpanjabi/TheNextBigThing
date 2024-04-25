@@ -33,7 +33,7 @@ jobs:
         node-version: 14
 
     - name: Set git configuration
-      run: git config --global user.email rajpunjabi47@yahoo.in && git config --global user.name "Raj Punjabi"
+      run: git remote -v && git config --global user.email rajpunjabi47@yahoo.in && git config --global user.name "Raj Punjabi"
       
     - name: Install Dependencies
       run: npm install
