@@ -11,7 +11,7 @@
     display:flex;
 }
   .background-container {
-    background-image: linear-gradient(890deg, black, transparent), url("https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/0c17621c-4929-4a1e-82fc-9c22e29239d7/CA-en-20240107-trifectadaily-perspective_alpha_website_medium.jpg");
+    background-image: linear-gradient(890deg, black, transparent), url("https://assets.nflxext.com/ffe/siteui/vlv3/c7f07b68-7989-4ff7-a31e-11c17dcc2fea/5cc79a46-0ee9-43ce-8431-6f4e020c4907/CA-en-20240422-popsignuptwoweeks-perspective_alpha_website_large.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,10 +22,9 @@
     left: 0;
   }
 
-.language-conatiner{
+.language-container{
     border-radius: 1px;
-    padding-right: 2.25rem;
     line-height: 1.25rem;
     margin-left: 100;
+    margin-right: 5px
 }
-  

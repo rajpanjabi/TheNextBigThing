@@ -5,3 +5,9 @@
 h3,.h3{
     font-size: xx-small;
 }
+
+.getStarted{
+    place-content: center;
+    display: inline-flex;
+    width: -webkit-fill-available;
+}
