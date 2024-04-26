@@ -12,8 +12,8 @@ return (
         <h1 style={{'textAlign':'center','marginBottom':'25px',fontWeight:'1000','font-size': 'xxx-large'}}>Unlimited movies,TV shows, and more</h1>
         <p className="pT" style={{'textAlign':'center','marginBottom':'25px'}}>Watch anywhere. Cancel anytime.</p>
         <h3 style={{'textAlign':'center','marginBottom':'15px',fontWeight:'400',fontSize:'large'}}>Ready to watch? Enter your email to create or restart your membership.</h3>
-        <div style={{'display':'inline-flex','margin-left': '33%','width':'-webkit-fill-available'}}>
-            <div style={{'margin-right': '1%',width: '35%'}}>
+        <div className = "getStarted">
+            <div style={{'margin-right': '55px'}}>
                 <form>
                 <input className="emailForm" type="text" placeholder="Email address" style={{'color':'white','padding':'0.75rem 1.5rem','background':'linear-gradient(500deg, black, transparent)','background-clip':'padding-box',width:'100%', border: 'solid white', borderWidth: 'thin',borderRadius:'3px'}}></input>
                </form>
