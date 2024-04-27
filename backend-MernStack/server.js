@@ -1,40 +1,47 @@
 import express from "express"
-import bodyParser from "body-parser"
 import mongoose from "mongoose";
 import cors from "cors";
-import Movie from "./models/Movie.js"; 
-// import auth from "./routes/auth"
+import dotenv from "dotenv";
+
+import MovieRoutes from "./routes/MovieRoutes.js"
+
 
 const app= express();
 const port=4000;
-
-app.use(bodyParser.urlencoded({"extended":"true"}));
+dotenv.config();
 
 app.use(cors());
 app.use(express.json());
 
 
-mongoose
-  .connect("mongodb+srv://admin:admin@cluster0.4jvsgwg.mongodb.net/Netflix?retryWrites=true&w=majority&appName=Cluster0", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+
+//method for modularity
+
+app.use((req,res,next)=>{
+  console.log(req.path, req.method)
+  next()
+  
   })
-  .then(() => console.log('DB connection successful...'))
+  
+  
+app.use('/api/movies',MovieRoutes)
+
+
+
+//database connection
+
+mongoose
+  .connect(process.env.MONGODB_URL)
+  .then(() => 
+  //listen for requests
+  app.listen(port,()=>{
+    console.log(`DB connection successful... and Server running on ${port}`)
+
+}))
   .catch((err) => console.log(err));
 
 
-  
 
-
-app.get("/hell",(req,res)=>{
-    console.log("here to get dtaa")
-
-    res.send("hellooos")
-    
-    
-    
-    
-})
 
 
 
@@ -63,19 +70,24 @@ app.get("/hell",(req,res)=>{
 //   });
 
   
+// app.get("/hell",(req,res)=>{
+//   console.log("here to get dtaa")
+
+//   res.send("hellooos")
+  
+  
+  
+  
+// })
 
 
-app.get("/db", async (req, res) => {
-    try {
-      const movies = await Movie.find({});
-      res.json(movies);
-    } catch (err) {
-      console.error("Error fetching movies:", err);
-      res.status(500).json({ error: "Internal server error" });
-    }
-  });
+// app.get("/db", async (req, res) => {
+//   try {
+//     const movies = await Movie.find({});
+//     res.json(movies);
+//   } catch (err) {
+//     console.error("Error fetching movies:", err);
+//     res.status(500).json({ error: "Internal server error" });
+//   }
+// });
 
-app.listen(port,()=>{
-    console.log(`Server running on ${port}`)
-
-});
