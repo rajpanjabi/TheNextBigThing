@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./SignIn.css"
 import {useNavigate} from "react-router-dom";
 import logo from '../LogoIcons&Images/Logos-Readability-Netflix-logo.png';
@@ -9,12 +9,21 @@ function SignIn(){
     let navigate = useNavigate();
     const [name,setName]= useState("");
     const [password, setPassword]= useState("");
+    useEffect(() => {
+        sessionStorage.setItem('pageRefreshed', 'true');
+        return () => {
+          sessionStorage.removeItem('pageRefreshed');
+        };
+      }, []);
+    const isPageRefreshed = sessionStorage.getItem('pageRefreshed') === 'true';
+      
     function nameChange(event){
         setName(event.target.value)
     }
     function passChange(event){
         setPassword(event.target.value)
     }
+
     function handleSignIn(e){
         e.preventDefault();
         console.log(e.target.name);
