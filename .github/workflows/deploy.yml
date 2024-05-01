@@ -41,4 +41,10 @@ jobs:
            ls
       working-directory: ./frontEnd
 
-
+    - name: build application
+      run: npm run build
+      working-directory: ./frontEnd
+      
+    - name: Run Deploy Script
+      run: npm run deploy
+      working-directory: ./frontEnd
