@@ -36,13 +36,9 @@ jobs:
       run: git config --global user.email rajpunjabi47@yahoo.in && git config --global user.name "Raj Punjabi"
       
     - name: Install Dependencies
-      run: npm install --save gh-pages
+      run: |
+           npm install --save gh-pages
+           ls
       working-directory: ./frontEnd
 
-    - name: build application
-      run: npm run build
-      working-directory: ./frontEnd
-      
-    - name: Run Deploy Script
-      run: npm run deploy
-      working-directory: ./frontEnd
+
