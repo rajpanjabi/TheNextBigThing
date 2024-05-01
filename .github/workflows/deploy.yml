@@ -41,7 +41,7 @@ jobs:
 
     - name: build application
       run: |
-           cd frontEnd
+           ls
            npm run build
       working-directory: ./frontEnd/node_modules
       
