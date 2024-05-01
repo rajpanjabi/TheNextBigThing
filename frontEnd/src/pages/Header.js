@@ -1,6 +1,6 @@
-import logo from './LogoIcons&Images/Logos-Readability-Netflix-logo.png';
-import langIcon from './LogoIcons&Images/language_icon.png'
+import logo from '../LogoIcons&Images/Logos-Readability-Netflix-logo.png';
 import { useNavigate } from "react-router-dom";
+
 function Header({ showButtons = true }){
   let navigate=useNavigate();
   function HandleSignIn(){
