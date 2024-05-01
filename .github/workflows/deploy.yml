@@ -37,13 +37,9 @@ jobs:
       
     - name: Install Dependencies
       run: npm install --save gh-pages
-      working-directory: ./frontEnd
 
     - name: build application
-      run: |
-           ls
-           npm run build
-      working-directory: ./frontEnd/node_modules
+      run: npm run build
       
     - name: Run Deploy Script
       run: npm run deploy
