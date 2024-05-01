@@ -6,7 +6,7 @@ function AdsPlanBanner(){
         <>
         <div className="banner">
         <div className= "bucket">
-            <img src ={icon} style={{'width':'50%'}}/>
+            <img src ={icon} style={{'width':'45%','paddingTop':'3%','borderRadius':'50%'}}/>
         </div>
         <div className="textb">
             <p className='textb1'>The Netflix you love for just $5.99. </p>
