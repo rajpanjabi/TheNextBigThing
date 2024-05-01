@@ -3,6 +3,7 @@ import './Header.css'; // Import a CSS file for styling (create this file if not
 import './Signup.css'; 
 import Header from "./Header"
 import AdsPlanBanner from './AdsPlanBanner';
+import TV from './TV';
 
 function Signup(){
 return (
@@ -26,6 +27,7 @@ return (
         </div>
     </div>
     <div className='adsPlanBanner'><AdsPlanBanner/></div>
+    <div className='tV'><TV/></div>
     </div>
   </div> 
     </>
