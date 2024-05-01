@@ -39,7 +39,9 @@ jobs:
       run: npm install --save gh-pages
 
     - name: build application
-      run: npm run build
+      run: |
+          cd ..
+          npm run build
       
     - name: Run Deploy Script
       run: npm run deploy
