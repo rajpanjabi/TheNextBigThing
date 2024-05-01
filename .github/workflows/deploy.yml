@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    types:
-      - closed
 
 jobs:
   deploy:
@@ -38,13 +35,12 @@ jobs:
     - name: Install Dependencies
       run: |
            npm install --save gh-pages
-           ls
       working-directory: ./frontEnd
 
     - name: build application
       run: npm run build
-      working-directory: ./frontEnd
+      working-directory: ./frontEnd/node_modules
       
     - name: Run Deploy Script
       run: npm run deploy
-      working-directory: ./frontEnd
+      working-directory: ./frontEnd/build
