@@ -7,7 +7,7 @@
     border-radius: 4px;
     margin: 0 74px;
     color: white;
-    padding: 22px;
+    padding: 5px;
 }
 
 .textb{
@@ -26,4 +26,8 @@
     line-height: 24px;
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+.bucket{
+    display:ruby;
 }
