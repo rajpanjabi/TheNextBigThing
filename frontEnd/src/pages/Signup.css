@@ -11,3 +11,7 @@ h3,.h3{
     display: inline-flex;
     width: -webkit-fill-available;
 }
+
+.app-container{
+    display: flex;
+}

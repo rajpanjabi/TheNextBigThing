@@ -3,8 +3,6 @@ import "./SignIn.css"
 import {useNavigate} from "react-router-dom";
 import logo from '../LogoIcons&Images/Logos-Readability-Netflix-logo.png';
 
-
-
 function SignIn(){
     let navigate = useNavigate();
     const [name,setName]= useState("");
