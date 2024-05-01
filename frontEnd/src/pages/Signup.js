@@ -10,7 +10,7 @@ return (
     <div className="app-container">
     <div className="background-container">
     <Header/>
-    <div className = "text" style={{marginTop:'8%'}}>
+    <div className = "text" style={{marginTop:'10%', marginBottom:'20%'}}>
         <h1 style={{'textAlign':'center','marginBottom':'25px',fontWeight:'1000','font-size': 'xxx-large'}}>Unlimited movies,TV shows, and more</h1>
         <p className="pT" style={{'textAlign':'center','marginBottom':'25px'}}>Watch anywhere. Cancel anytime.</p>
         <h3 style={{'textAlign':'center','marginBottom':'15px',fontWeight:'400',fontSize:'large'}}>Ready to watch? Enter your email to create or restart your membership.</h3>
@@ -25,8 +25,8 @@ return (
             </div>
         </div>
     </div>
-    </div>
     <div className='adsPlanBanner'><AdsPlanBanner/></div>
+    </div>
   </div> 
     </>
 );
