@@ -1,0 +1,44 @@
+.tvWrapper{
+    display: inline-flex;
+    place-content: center;
+    width: 100%;
+}
+
+.tvText{
+    text-align: center;
+    padding: 11%;
+}
+
+.tvMp4{
+    width:100%;
+    padding: 2%;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    color: white;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0 0;
+    color: white;
+}
+
+.imageWrapper{
+    position:absolute;
+    width: 37%;
+}
+
+.animation{
+    bottom: 135px;
+    right: 166px;
+    position: absolute;
+}
+
+.desktopImg{
+    width: 100%;
+}
