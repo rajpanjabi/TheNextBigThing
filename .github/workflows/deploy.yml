@@ -40,7 +40,7 @@ jobs:
 
     - name: build application
       run: |
-          cd ..
+          cd frontEnd
           npm run build
       
     - name: Run Deploy Script
