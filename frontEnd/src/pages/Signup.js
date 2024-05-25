@@ -3,7 +3,8 @@ import './Header.css'; // Import a CSS file for styling (create this file if not
 import './Signup.css'; 
 import Header from "./Header"
 import AdsPlanBanner from './AdsPlanBanner';
-import TV from './TV';
+import TV from './TV.js';
+import WatchEverywhere from './WatchEverywhere';
 
 function Signup(){
 return (
@@ -28,6 +29,7 @@ return (
     </div>
     <div className='adsPlanBanner'><AdsPlanBanner/></div>
     <div className='tV'><TV/></div>
+    <div className='watchEverywhere'><WatchEverywhere/></div>
     </div>
   </div> 
     </>

@@ -2,16 +2,21 @@
     display: inline-flex;
     place-content: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .tvText{
     text-align: center;
     padding: 11%;
+    flex: 1;
+    min-width: 300px;
 }
 
 .tvMp4{
     width:100%;
     padding: 2%;
+    flex: 1; 
+    min-width: 300px;
 }
 
 h2{
@@ -36,9 +41,36 @@ p{
 .animation{
     bottom: 135px;
     right: 190px;
-    position: absolute;
 }
 
 .desktopImg{
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tvWrapper {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items */
+    }
+
+    .tvText, .tvMp4 {
+        width: 100%; /* Full width for both elements */
+        padding: 5%; /* Adjust padding for better spacing */
+    }
+
+    .imageWrapper {
+        position: relative; /* Adjust position for stacking */
+        width: 100%;
+    }
+
+    .animation {
+        bottom: auto;
+        right: auto;
+        width: 100%; /* Adjust width for smaller screens */
+        text-align: center;
+    }
+
+    .animation video {
+        width: 100%; /* Adjust video width for smaller screens */
+    }
 }
