@@ -1,0 +1,14 @@
+.watchEverywhere{
+    display: inline-flex;    
+    background-color: black;
+    place-content: center;
+    padding-top: 5%;
+}
+
+.mac{ 
+}
+
+.textmac{
+    padding-left: 5%;
+    place-content: center;
+}
