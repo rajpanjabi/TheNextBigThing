@@ -4,11 +4,50 @@
     place-content: center;
     padding-top: 5%;
 }
-
+video{
+    display: inline-block;
+    vertical-align: baseline;
+}
+.animationVideo{
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .mac{ 
+    position: sticky;
 }
 
 .textmac{
-    padding-left: 5%;
+    text-align: center;
+    padding-left: 3%;
     place-content: center;
+}
+@media (max-width: 960px) {
+    .watchEverywhere {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items */
+    }
+
+    .imageWrapper {
+        position: relative; /* Adjust position for stacking */
+        width: 100%;
+    }
+
+    .animationVideo {
+        bottom: auto;
+        right: auto;
+        width: 100%; /* Adjust width for smaller screens */
+        text-align: center;
+    }
+
+    .animationVideo video {
+        width: 100%; /* Adjust video width for smaller screens */
+    }
 }
