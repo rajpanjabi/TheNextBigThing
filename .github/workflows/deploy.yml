@@ -42,7 +42,7 @@ jobs:
 
     - name: build application
       run: |
-          cd frontEnd/node_modules
+          cd frontEnd
           npm run build
       
     - name: Run Deploy Script
