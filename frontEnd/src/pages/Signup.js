@@ -5,6 +5,7 @@ import Header from "./Header"
 import AdsPlanBanner from './AdsPlanBanner';
 import TV from './TV.js';
 import WatchEverywhere from './WatchEverywhere';
+import KidsProfile from './KidsProfile.js';
 
 function Signup(){
 return (
@@ -30,6 +31,7 @@ return (
     <div className='adsPlanBanner'><AdsPlanBanner/></div>
     <div className='tV'><TV/></div>
     <div className='watchEverywhere'><WatchEverywhere/></div>
+    <div className='kidsProfile'><KidsProfile/></div>
     </div>
   </div> 
     </>
