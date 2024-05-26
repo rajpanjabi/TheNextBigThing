@@ -1,0 +1,34 @@
+.kidsProfile{
+    display: inline-flex;    
+    background-color: black;
+    place-content: center;
+    padding-top: 5%;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.textKidsProfile{
+    text-align: center;
+    place-content: center;
+    padding:12%;
+}
+
+@media (max-width: 960px) {
+    .kidsProfile {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items */
+    }
+
+    .imageWrapper {
+        position: relative; /* Adjust position for stacking */
+        width: 100%;
+    }
+}

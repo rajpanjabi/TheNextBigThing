@@ -1,5 +1,5 @@
 .banner{
-    display: inline-flex;
+    display: -webkit-inline-box;
     width: -webkit-fill-available;
     place-content: center;
     background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
@@ -30,6 +30,5 @@
 
 .bucket{
     display:ruby;
-    margin-right: -24%;
     padding: 1%;
 }
