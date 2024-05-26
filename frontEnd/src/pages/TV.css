@@ -13,7 +13,6 @@
 }
 
 .tvMp4{
-    width:100%;
     padding: 2%;
     flex: 1; 
     min-width: 300px;
@@ -61,15 +60,10 @@ video{
     vertical-align: baseline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .tvWrapper {
         flex-direction: column; /* Stacks items vertically */
         align-items: center; /* Centers items */
-    }
-
-    .tvText, .tvMp4 {
-        width: 100%; /* Full width for both elements */
-        padding: 5%; /* Adjust padding for better spacing */
     }
 
     .imageWrapper {

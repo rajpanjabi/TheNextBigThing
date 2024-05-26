@@ -3,7 +3,7 @@ import './TV.css';
 function TV(){
     return(
         <>
-        <div className = "tvWrapper">
+        <div className = "tvWrapper" style={{paddingTop:"4.5rem 0"}}>
             <div className = "tvText">
                 <h2>Enjoy on your TV</h2>
                 <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
