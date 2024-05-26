@@ -66,11 +66,6 @@ video{
         align-items: center; /* Centers items */
     }
 
-    .imageWrapper {
-        position: relative; /* Adjust position for stacking */
-        width: 100%;
-    }
-
     .animation {
         bottom: auto;
         right: auto;
