@@ -6,6 +6,7 @@ import AdsPlanBanner from './AdsPlanBanner.js';
 import TV from './TV.js';
 import WatchEverywhere from './WatchEverywhere.js';
 import KidsProfile from './KidsProfile.js';
+import DownloadOffline from './DownloadOffline.js';
 
 function Signup(){
 return (
@@ -32,6 +33,7 @@ return (
     <div className='tV'><TV/></div>
     <div className='watchEverywhere'><WatchEverywhere/></div>
     <div className='kidsProfile'><KidsProfile/></div>
+    <div className='downloadOffline'><DownloadOffline/></div>
     </div>
   </div> 
     </>
