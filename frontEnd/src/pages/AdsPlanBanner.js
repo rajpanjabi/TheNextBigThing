@@ -1,4 +1,4 @@
-import icon from '../LogoIcons&Images/popc.png';
+import icon from '../LogoIcons&Images/popcorn.svg';
 import './AdsPlanBanner.css';
 
 function AdsPlanBanner(){
@@ -6,7 +6,7 @@ function AdsPlanBanner(){
         <>
         <div className="banner">
         <div className= "bucket">
-            <img src ={icon} style={{'width':'45%','paddingTop':'3%','borderRadius':'50%'}}/>
+            <img src ={icon} style={{width:"11%",padding:"1%"}}/>
         </div>
         <div className="textb">
             <p className='textb1'>The Netflix you love for just $5.99. </p>
