@@ -1,10 +1,10 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './Header.css'; // Import a CSS file for styling (create this file if not already present)
+import '../Header.css'; // Import a CSS file for styling (create this file if not already present)
 import './Signup.css'; 
-import Header from "./Header"
-import AdsPlanBanner from './AdsPlanBanner';
+import Header from "../Header.js"
+import AdsPlanBanner from './AdsPlanBanner.js';
 import TV from './TV.js';
-import WatchEverywhere from './WatchEverywhere';
+import WatchEverywhere from './WatchEverywhere.js';
 import KidsProfile from './KidsProfile.js';
 
 function Signup(){

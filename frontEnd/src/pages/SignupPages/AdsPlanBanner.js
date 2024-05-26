@@ -1,4 +1,4 @@
-import icon from '../LogoIcons&Images/popcorn.svg';
+import icon from '../../LogoIcons&Images/popcorn.svg';
 import './AdsPlanBanner.css';
 
 function AdsPlanBanner(){
