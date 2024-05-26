@@ -1,0 +1,49 @@
+.downloadOffline{
+    display: inline-flex;    
+    background-color: black;
+    place-content: center;
+    padding-top: 5%;
+}
+
+.textOffline{
+    text-align: center;
+    place-content: center;
+    padding: 5%;
+}
+
+.downloadImage{
+    position: relative;
+}
+
+.sthingsWrap{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    width: 60%;
+    min-width: 15rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    border-radius: 0.75rem;
+    z-index: 1;
+}
+
+.sthingsText{
+    padding-left: 3%;
+}
+
+.sthingImage{
+    padding: 2%;
+}
+
+@media (max-width: 960px){
+    .downloadOffline{
+        flex-direction: column;
+        align-items: center;
+    }
+}
