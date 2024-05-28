@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 function Browse(){
-    let navigate=useNavigate;
+    let navigate=useNavigate();
     let [data,setData]= useState("");
 
     async function getData(){
@@ -20,6 +20,11 @@ function Browse(){
 
     }
 
+    function Catalog(){
+
+        navigate('/Catalogue')
+    }
+
     return(
 
 
@@ -27,6 +32,7 @@ function Browse(){
         <h1> Who's Watching</h1>
         <button onClick={getData}>Dataaa</button>
         <p>{data}</p>
+        <button onClick={Catalog}>Go To Catalogue</button>
 
 
 
