@@ -1,0 +1,54 @@
+.base2{
+
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+
+.head{
+    display: flex;
+    flex-direction: row;
+    row-gap: 3rem;
+    justify-content: space-around;
+    background-color: black;
+    color:white
+    
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+   
+    list-style-type: none;
+    row-gap: 3rem;
+    
+    
+}
+
+ul li {
+    margin-right: 1.5rem; /* Adjust the value as needed */
+}
+
+.rightSideMenuOptions ul li {
+    margin-left: 1rem; /* Adjust the value as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

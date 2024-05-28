@@ -14,6 +14,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
 .redfont{
@@ -68,7 +69,7 @@ margin-left:43%;
 
 }
 
-.entLine{
+.entLine {
 
     display:flex;
     flex-direction: row;
@@ -103,10 +104,10 @@ margin-left:43%;
 
 /* // #f3f3f3; */
 
-.NewNetf{
+.NewNetf {
     margin-left: 14%;
     margin-right: 14%;
-    font-size: 13px;
+    font-size: 11px;
     font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; ;
     color: #8c8c8c;
     font-size: 13px;
