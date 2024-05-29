@@ -18,7 +18,7 @@ function DownloadOffline(){
                 </div>
             </div>
             <div className="textOffline">
-                <h2>Download your shows to watch offline</h2>
+                <h2 className="sinUph2">Download your shows to watch offline</h2>
                 <p className="sinUpPText">Watch on a plane, train, or submarine...</p>
             </div>
         </div>
