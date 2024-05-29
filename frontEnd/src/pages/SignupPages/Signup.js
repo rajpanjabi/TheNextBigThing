@@ -7,8 +7,17 @@ import TV from './TV.js';
 import WatchEverywhere from './WatchEverywhere.js';
 import KidsProfile from './KidsProfile.js';
 import DownloadOffline from './DownloadOffline.js';
+import { useNavigate } from "react-router-dom";
 
 function Signup(){
+
+    let navigate=useNavigate();
+
+    function navi(){
+        navigate("/SignIn")
+    }
+
+
 return (
     <>
     <div className="app-container">
@@ -25,7 +34,7 @@ return (
                </form>
             </div>
             <div>
-            <button type="button" className="btn btn-primary" style={{  'padding':'0.75rem 1.5rem','background':'rgb(229, 9, 20)','border': 'thick','font-size': '17px','font-weight': '500',borderRadius:'3px'}}>Get started</button>
+            <button type="button" onClick={navi} className="btn btn-primary" style={{  'padding':'0.75rem 1.5rem','background':'rgb(229, 9, 20)','border': 'thick','font-size': '17px','font-weight': '500',borderRadius:'3px'}}>Get started</button>
             </div>
         </div>
     </div>
