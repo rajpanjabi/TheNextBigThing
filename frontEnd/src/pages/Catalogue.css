@@ -6,6 +6,7 @@
 
 .head{
     display: flex;
+    max-height: 80px;
     flex-direction: row;
     row-gap: 3rem;
     justify-content: space-around;
@@ -36,14 +37,46 @@ ul li {
 
 .rightSideMenuOptions ul li {
     margin-left: 1rem; /* Adjust the value as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    align-items: center;
+}
+.rightSideMenuOptions {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+align-items: center;
 }
 
 
+.lognet{
+    height:6rem;
 
+    width:9rem;
+}
 
+.trailer{
+    position: relative;
+  
+    
+    overflow: hidden;
+    height: 500px;
+}
 
+.trail{
+    
+    width: 100%;
+    height: 500px;
+}
 
-
+.tit{
+    display: flex;
+    flex-direction: row;
+    
+}
 
 
 
