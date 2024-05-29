@@ -6,7 +6,7 @@ function TV(){
         <div className = "tvWrapper" style={{paddingTop:"5%"}}>
             <div className = "tvText">
                 <h2>Enjoy on your TV</h2>
-                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <p className="sinUpPText">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
             </div>
             <div className = "tvMp4">
                 <img className="desktopImg" src = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"></img>

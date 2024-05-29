@@ -12,7 +12,7 @@ function WatchEverywhere(){
             </div>
             <div className="textmac">
                 <h2>Watch everywhere</h2>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <p className="sinUpPText">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
             </div>
         </div>
         </>
