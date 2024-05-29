@@ -5,7 +5,7 @@ function TV(){
         <>
         <div className = "tvWrapper" style={{paddingTop:"5%"}}>
             <div className = "tvText">
-                <h2>Enjoy on your TV</h2>
+                <h2 className="sinUph2">Enjoy on your TV</h2>
                 <p className="sinUpPText">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
             </div>
             <div className = "tvMp4">

@@ -4,7 +4,7 @@ function KidsProfile(){
         <>
         <div className="kidsProfile">
             <div className="textKidsProfile">
-                <h2>Create profiles for kids</h2>
+                <h2 className="sinUph2">Create profiles for kids</h2>
                 <p className="sinUpPText">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
             </div>
             <div className="kidsImage">
